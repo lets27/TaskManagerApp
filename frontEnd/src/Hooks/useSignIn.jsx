@@ -6,7 +6,7 @@ const useSignIn = () => {
 
   return useMutation({
     mutationFn: async (formData) => {
-      const response = await fetch(`${baseUrl}/api/auth/register`, {
+      const response = await fetch(`${baseUrl}/api/auth/signup`, {
         method: "POST",
         body: formData,
         credentials: "include", // For cookie-based auth
