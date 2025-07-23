@@ -33,6 +33,7 @@ app.use("/api/official", userRouter);
 app.use((req, res, next) => {
   // if we have the wrong route
   const error = new Error("route not found");
+  console.error(`Route not found: ${req.method} ${req.originalUrl}`);
   error.status = 404;
   next(error);
 });
