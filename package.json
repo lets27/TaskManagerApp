@@ -1,0 +1,13 @@
+{
+  "name": "taskmanagerapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --production=false --prefix frontEnd && npm run build --prefix frontEnd",
+    "start": "npm start --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
