@@ -4,9 +4,8 @@ import { decode } from "jsonwebtoken";
 import pkg from "jsonwebtoken";
 const { sign, verify } = pkg;
 import cloudinary from "cloudinary";
-import User from "../database/Models/userModel.js";
+import User from "../database/models/userModel.js";
 import dotenv from "dotenv";
-import crypto from "crypto";
 import multer from "multer";
 import asyncHandler from "express-async-handler";
 

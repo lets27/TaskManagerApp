@@ -1,4 +1,4 @@
-import User from "../database/Models/userModel.js";
+import User from "../database/models/userModel.js";
 import dotenv from "dotenv";
 import multer from "multer";
 import asyncHandler from "express-async-handler";
